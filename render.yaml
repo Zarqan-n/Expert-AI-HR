@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: experthr
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health/
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_HOSTS
+        value: experthr.onrender.com
+      - key: CSRF_TRUSTED_ORIGINS
+        value: https://experthr.onrender.com
+      - key: GROQ
+        sync: false
+      - key: MODEL
+        sync: false
+      - key: WEB_CONCURRENCY
+        value: "2"
