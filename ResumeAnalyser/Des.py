@@ -1,7 +1,7 @@
 import os
 import json
-from ResumeAnalyser.Configu import client
-from ResumeAnalyser.Models import job_description
+from Configu import client
+from Models import job_description
 from dotenv import load_dotenv
 load_dotenv()
 

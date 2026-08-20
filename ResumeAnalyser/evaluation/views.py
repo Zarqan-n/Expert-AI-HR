@@ -1,7 +1,7 @@
 from django.http import JsonResponse
 from django.shortcuts import render
-from ResumeAnalyser.HR import evaluate_resume
-from ResumeAnalyser.files import extract_text_from_bytes
+from HR import evaluate_resume
+from files import extract_text_from_bytes
 import zipfile
 from io import BytesIO
 
