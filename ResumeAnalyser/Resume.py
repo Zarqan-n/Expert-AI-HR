@@ -1,5 +1,5 @@
-from Configu import client
-from Models import Resume
+from ResumeAnalyser.Configu import client
+from ResumeAnalyser.Models import Resume
 import json
 import os
 from dotenv import load_dotenv

@@ -1,7 +1,7 @@
-from Resume import parse_resume
-from Des import parse_descripton
-from Configu import client
-from Models import ResumeEvaluation
+from ResumeAnalyser.Resume import parse_resume
+from ResumeAnalyser.Des import parse_descripton
+from ResumeAnalyser.Configu import client
+from ResumeAnalyser.Models import ResumeEvaluation
 import json
 import os
 import time
